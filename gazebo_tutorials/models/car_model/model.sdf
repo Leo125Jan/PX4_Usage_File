@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+
+  <model name='Car'>
+    <static>true</static>
+    
+    <link name='car01'>
+
+      <pose frame=''>0 0 0.7 0 0 0</pose>
+      
+       <collision name='collision'>
+        <geometry>
+          <mesh>
+            <uri>/home/leo/plan/src/Vtol_Camera_Project/gazebo_tutorials/models/car_model/meshes/CAR01.stl</uri>
+            <scale>0.1 0.1 0.1</scale>
+          </mesh>
+        </geometry>
+      </collision>>
+
+      <visual name='visual'>
+        <geometry>
+          <mesh>
+            <uri>/home/leo/plan/src/Vtol_Camera_Project/gazebo_tutorials/models/car_model/meshes/CAR01.stl</uri>
+            <scale>0.1 0.1 0.1</scale>
+          </mesh>
+        </geometry>
+        <!-- <material>
+          <script>
+            <uri>/home/leo/project/src/gazebo_tutorials/models/car_model/materials/scripts</uri>
+            <uri>/home/leo/project/src/gazebo_tutorials/models/car_model/materials/textures</uri>
+            <name>Car</name>
+          </script>
+        </material> -->
+      </visual>
+
+    </link>
+
+  </model>
+</sdf>
